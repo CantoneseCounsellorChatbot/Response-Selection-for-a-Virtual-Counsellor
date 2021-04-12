@@ -34,7 +34,7 @@ Intuitively, reply relevance is often correlated with its symptom category.
 The assignment of relevance scores are shown in the below Table. The gold reply is assigned y<sub>i</sub> = 1. To train the model to distinguish between semantically close replies, we included all non-gold replies in the same symptom category, with the assigned relevance score of y<sub>i</sub>= 0.75; and all replies from the same symptom group, with y<sub>i</sub> = 0.50. Further, we randomly selected M replies from the same topic (y<sub>i</sub> = 0.25), and M replies from a different topic (y<sub>i</sub> = 0).
 We set M ={1,2,3,4,5,10}   
 | Reply type|score|
-| :-----------------------------------------| :--------- |
+| :----------------------------------------- | :--------- |
 |Gold reply|1|
 |Candidate reply in same symptom category |0.75|
 |Candidate reply in same symptom group|0.5|
@@ -54,7 +54,9 @@ when reply  is the gold reply to the post . We then randomly selected N non-gold
 
 ## <a name="#Results">Results</a>
 We used 5-fold cross validation to evaluate all the models We also measured the ceiling performance of the symptom category-based regression model, when it has access to the gold symptom category. 
+* Model selects a reply for each input
 ![results1](/pictures/result1.png)
+* Model selects a reply when above confidence threshold
 ![results2](/pictures/result2.png)
 
 
