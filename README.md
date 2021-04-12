@@ -32,9 +32,9 @@ They all use RoBERTa whole-word masking (chinese-roberta-wwm-ext) as the pretrai
 * Symptom category-based regression   
 Intuitively, reply relevance is often correlated with its symptom category.
 The assignment of relevance scores are shown in the below Table. The gold reply is assigned y<sub>i</sub> = 1. To train the model to distinguish between semantically close replies, we included all non-gold replies in the same symptom category, with the assigned relevance score of y<sub>i</sub>= 0.75; and all replies from the same symptom group, with y<sub>i</sub> = 0.50. Further, we randomly selected M replies from the same topic (y<sub>i</sub> = 0.25), and M replies from a different topic (y<sub>i</sub> = 0).
-We set M ={1,2,3,4,5,10}
+We set M ={1,2,3,4,5,10}   
 | Reply type|score|
-| :----------------------------------------------------------- | :--------- |
+| :-----------------------------------------| :--------- |
 |Gold reply|1|
 |Candidate reply in same symptom category |0.75|
 |Candidate reply in same symptom group|0.5|
