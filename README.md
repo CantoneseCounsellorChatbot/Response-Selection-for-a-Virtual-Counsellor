@@ -35,7 +35,7 @@ The assignment of relevance scores are shown in the below Table. The gold reply 
 y<sub>i</sub> = 0.50. Further, we randomly selected M replies from the same topic (y<sub>i</sub> = 0.25), and M replies from a different topic (y<sub>i</sub> = 0).
 We set M ={1,2,3,4,5,10}
 | Reply type|score|
-| :----------------------------------------------------------- | :--------- | :---------  | :---------  |
+| :----------------------------------------------------------- | :--------- |
 |Gold reply|1|
 |Candidate reply in same symptom category |0.75|
 |Candidate reply in same symptom group|0.5|
@@ -52,7 +52,7 @@ In this Regression method, we used the gold reply and 10 non-gold replies for ea
 ## <a name="#Results">Results</a>
 We used 5-fold cross validation to evaluate all the models We also measured the ceiling performance of the symptom category-based regression model, when it has access to the gold symptom category. 
 ![results1](/pictures/result1.png)
-![results2](/pictures/result1.png)
+![results2](/pictures/result2png)
 
 
 
