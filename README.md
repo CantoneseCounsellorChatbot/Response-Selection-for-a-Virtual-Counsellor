@@ -33,6 +33,13 @@ They all use RoBERTa whole-word masking (chinese-roberta-wwm-ext) as the pretrai
 Intuitively, reply relevance is often correlated with its symptom category.
 The assignment of relevance scores are shown in the below Table. The gold reply is assigned y<sub>i</sub> = 1. To train the model to distinguish between semantically close replies, we included all non-gold replies in the same symptom category, with the assigned relevance score of y<sub>i</sub>= 0.75; and all replies from the same symptom group, with y<sub>i</sub> = 0.50. Further, we randomly selected M replies from the same topic (y<sub>i</sub> = 0.25), and M replies from a different topic (y<sub>i</sub> = 0).
 We set M ={1,2,3,4,5,10}   
+
+| Post|advice|
+| :----------------------------------------------------------- | :--------- | 
+|我唔開心，好似真係無人會理咁| 明白呢個感受會令人唔開心，試下對人敞開自己 |
+|有左女朋友之後就無哂朋友| 或者試下多同同學開新話題| Loneliness|
+|我會答錯哂，然後我啊媽會鬧| 不要讓父母成為了你的壓力,盡了力便可|
+
 | Reply type|score|
 | :----------------------------------------------------------- | :--------- |
 |Gold reply|1|
