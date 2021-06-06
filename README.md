@@ -1,4 +1,4 @@
-# Cantonese-Counsellor-Chatbot
+# Response Selection for a Virtual Counsellor
 * The project  provides a dataset which consist of  1,028 Cantonese post-reply pairs on two common counselling topics for university students: test anxiety and loneliness    
 * This data set is used to train a retrieval-based chatbot. For details, please refer to our paper [Response Selection for a Virtual Counsellor](https://portland-my.sharepoint.com/:b:/g/personal/baikliang2-c_my_cityu_edu_hk/EaU76D80oOFJhVU6CPaKuckBqtOka_JLayLh1p8RrJschA?e=uAebW4)
 
